@@ -1,0 +1,36 @@
+/* // `xs` returns only a ruleset and no media query */
+/* // ... { ... } */
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 2400px) {
+  .covercontainer{
+    margin-top: 100vw ; 
+  }
+}
+@media (max-width: 1399px) {
+   .covercontainer{
+    margin-top: 100vw; 
+  }
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .covercontainer{
+    margin-top: 100vw; 
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+     .covercontainer{
+    margin-top: 100vw ; 
+  }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+     .covercontainer{
+    margin-top: 100vw; 
+  }
+  .vertical-slider{
+    height: 170px !important;
+  }
+ 
+}

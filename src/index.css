@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-fluid {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 100px 50px;
+}
+.container-c {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+}
+footer .container-fluid {
+  padding: 100px 50px 0px 50px;
+}
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hero {
+  background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding: 100px 0px 20px 0px; */
+}
+.service-details-hero {
+  background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.testimonials .slick-slide {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+.testimonials .slick-slide.slick-active.slick-center.slick-current {
+  transform: scale(1);
+  position: relative;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.testimonials .slider-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 58.4%);
+  z-index: 7;
+}
+.testimonials .slider-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: rotate(180deg);
+  height: 100%;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 58.4%);
+
+  z-index: 7;
+}
+.vertical-slider .slick-dots {
+  /* right: 0px !important; */
+  /* height: 160px; */
+  bottom: 0px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.vertical-slider .slick-dots li button:before {
+  /* font-size: 15px; */
+}
+.vertical-slider .slick-dots li.slick-active button:hover:before {
+  color: transparent;
+}
+.vertical-slider .slick-dots li.slick-active button:before {
+  /* font-size: 15px;
+  color: transparent;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; */
+  /* margin-right: 1px; */
+  /* transform: translate(4px, 0px);
+  background: linear-gradient(101.12deg, #48cae4 0%, #0070ff 176.3%); */
+}
+.vertical-slider .slick-list {
+  height: 160px;
+  overflow: hidden;
+}
+.foot-text {
+  text-align: center;
+  font-size: clamp(100px, 16.5vw, 400px);
+}
+
+/* Service Page Started ==========------------ */
+.service-hero {
+  background-image: url("https://the-varallo-group.vercel.app/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ------------========== Service Page End ==========------------ */
+
+.testimonials .slick-slide {
+  height: 500px;
+}
+.testimonials .slick-slide > div {
+  height: 100% !important;
+}
+.testimonials .slick-slide > div > div {
+  height: 100% !important;
+}
+/* ------------========== Responsive CSS Start ==========------------ */
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+/* @media (max-width: 2000px) {
+  #curved-slider-container{
+    margin-top:80vw !important;
+    
+  }
+} */
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+  .testimonials .slick-slide {
+    height: 700px;
+  }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+  .testimonials .slick-slide {
+    height: 800px;
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 70px 25px;
+  }
+  .container-c {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+  }
+  footer .container-fluid {
+    padding: 70px 25px 0px 25px;
+  }
+  .foot-text {
+    font-size: clamp(50px, 15vw, 400px);
+  }
+  /* .testimonials .slick-slide {
+    height: 600px;
+  } */
+  .testimonials .slick-slide {
+    transform: scale(1);
+    padding: 10px;
+  }
+  .testimonials .slider-container::after,
+  .testimonials .slider-container::before{
+    width: 100px;
+  }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .container-fluid {
+    padding: 50px 20px;
+  }
+}
+.css-13cymwt-control{
+  background: transparent !important;
+  border: none !important;
+
+}
+.css-13cymwt-control:hover{
+  background: transparent;
+
+  border: transparent;
+  border-color: transparent;
+
+}
