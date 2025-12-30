@@ -1,6 +1,6 @@
 // API Service - Frontend to Backend Communication
 
-const API_BASE_URL = 'https://552a721652e2.ngrok-free.app/api';
+const API_BASE_URL = 'https://backendcms-oi8n.onrender.com/api';
 
 // page slug endpoints
 export const pageAPI = {
